@@ -8,7 +8,12 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 ALLOWED_KEYWORDS = [
     "la liga", "laliga", "premier league", "epl",
-    "champions league", "ucl", "football", "soccer"
+    "champions league", "ucl", "football", "soccer",
+    "messi", "ronaldo", "haaland", "mbappe", "mbappé",
+    "bellingham", "vinicius", "vinícius", "yamal",
+    "lewandowski", "salah", "benzema", "ballon d'or",
+    "real madrid", "barcelona", "manchester city", "manchester united",
+    "liverpool", "arsenal", "chelsea", "bayern munich"
 ]
 
 def is_on_topic(query, history):
