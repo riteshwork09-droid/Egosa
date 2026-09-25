@@ -89,4 +89,4 @@ streamlit run app.py
 
 ## Author
 
-Built by Yohan as a hands-on project to learn RAG, vector search, conversation memory, and LLM application development end-to-end — from data to a deployed product.
+Built by Ritesh as a hands-on project to learn RAG, vector search, conversation memory, and LLM application development end-to-end — from data to a deployed product.
