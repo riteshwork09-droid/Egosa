@@ -1,0 +1,22 @@
+[
+  {"league": "La Liga", "type": "trophy", "text": "Real Madrid has won the most La Liga titles, with 36 championships as of the 2023-24 season."},
+  {"league": "La Liga", "type": "trophy", "text": "Barcelona has won the second-most La Liga titles, with 27 championships."},
+  {"league": "La Liga", "type": "player", "text": "Lionel Messi is La Liga's all-time top scorer, having played for Barcelona for most of his career there."},
+  {"league": "La Liga", "type": "player", "text": "Karim Benzema won the Ballon d'Or in 2022 while playing for Real Madrid in La Liga."},
+  {"league": "La Liga", "type": "club", "text": "Atletico Madrid is considered one of the 'big three' clubs in La Liga alongside Real Madrid and Barcelona."},
+
+  {"league": "Premier League", "type": "trophy", "text": "Manchester United has won the most Premier League titles, with 13 championships since the league's founding in 1992."},
+  {"league": "Premier League", "type": "trophy", "text": "Manchester City has dominated the Premier League in recent years, winning multiple titles under manager Pep Guardiola."},
+  {"league": "Premier League", "type": "player", "text": "Erling Haaland set the Premier League single-season goal record with 36 goals in the 2022-23 season."},
+  {"league": "Premier League", "type": "player", "text": "Alan Shearer holds the record for most goals in Premier League history."},
+  {"league": "Premier League", "type": "club", "text": "The 'Big Six' clubs in the Premier League are Manchester United, Manchester City, Liverpool, Chelsea, Arsenal, and Tottenham Hotspur."},
+
+  {"league": "Champions League", "type": "trophy", "text": "Real Madrid holds the record for most Champions League titles, with 15 wins."},
+  {"league": "Champions League", "type": "trophy", "text": "AC Milan has won the Champions League/European Cup 7 times, the second-most of any club."},
+  {"league": "Champions League", "type": "player", "text": "Cristiano Ronaldo is the all-time top scorer in Champions League history."},
+  {"league": "Champions League", "type": "format", "text": "The Champions League format includes a group stage followed by knockout rounds, culminating in a single final match at a neutral venue."},
+  {"league": "Champions League", "type": "format", "text": "Only clubs that finish in the top positions of their domestic league (or win certain domestic cups) qualify for the Champions League."},
+
+  {"Best player of the year":"Ballon'dor Player", "type":"player", "text": "ousman dembele has won the ballon dor in 2025 " }
+
+]
