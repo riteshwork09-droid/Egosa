@@ -2,7 +2,7 @@ import json
 import faiss
 from sentence_transformers import SentenceTransformer
 
-with open ("data/football_data.json") as f :
+with open("data/football_data.json", encoding="utf-8") as f:
     data = json.load(f)
 
 index = faiss.read_index("data/football.index")

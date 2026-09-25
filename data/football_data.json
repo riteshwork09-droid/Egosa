@@ -54,6 +54,688 @@
   {"league": "General", "type": "transfer", "text": "Kylian Mbappe joined Real Madrid from Paris Saint-Germain in 2024 on a free transfer."},
   {"league": "General", "type": "transfer", "text": "Jude Bellingham transferred from Borussia Dortmund to Real Madrid in 2023."},
   {"league": "General", "type": "player", "text": "Vinicius Junior is a Brazilian forward who plays for Real Madrid and has become a key attacking player in La Liga and the Champions League."},
-  {"league": "General", "type": "player", "text": "Lamine Yamal became one of the youngest players to debut for both Barcelona and the Spanish national team."}
+  {"league": "General", "type": "player", "text": "Lamine Yamal became one of the youngest players to debut for both Barcelona and the Spanish national team."},
+
+  {
+    "team": "FC Barcelona",
+    "type": "team",
+    "text": "FC Barcelona is a professional football club based in Barcelona, Spain, competing in La Liga."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "coach",
+    "text": "Hansi Flick is the head coach of FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "assistant_coach",
+    "text": "Marcus Sorg is an assistant coach of FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "assistant_coach",
+    "text": "Toni Tapalović is an assistant coach of FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "assistant_coach",
+    "text": "Heiko Westermann is an assistant coach of FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "goalkeeping_coach",
+    "text": "José Ramón de la Fuente is the goalkeeping coach of FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "fitness_coach",
+    "text": "Pepe Conde is the field fitness coach of FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "fitness_coach",
+    "text": "Benjamin Kugel is the gym and strength fitness coach of FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "sporting_management",
+    "text": "Rafael Yuste is the director responsible for the sports area at FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "sporting_management",
+    "text": "Deco, whose full name is Anderson Luis de Souza, is the director of football at FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "sporting_management",
+    "text": "Bojan Krkić is the football coordinator at FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "sporting_management",
+    "text": "João Pedro Amaral is the director of scouting at FC Barcelona."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "goalkeeper",
+    "player": "Joan García",
+    "number": 1,
+    "text": "Joan García is a goalkeeper for FC Barcelona and wears the number 1 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "goalkeeper",
+    "player": "Wojciech Szczęsny",
+    "number": 13,
+    "text": "Wojciech Szczęsny is a goalkeeper for FC Barcelona and wears the number 13 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "goalkeeper",
+    "player": "Dominik Livaković",
+    "number": 25,
+    "text": "Dominik Livaković is a goalkeeper for FC Barcelona and wears the number 25 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "defender",
+    "player": "João Cancelo",
+    "number": 2,
+    "text": "João Cancelo is a defender for FC Barcelona and wears the number 2 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "defender",
+    "player": "Alejandro Balde",
+    "number": 3,
+    "text": "Alejandro Balde is a defender for FC Barcelona and wears the number 3 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "defender",
+    "player": "Pau Cubarsí",
+    "number": 5,
+    "text": "Pau Cubarsí is a defender for FC Barcelona and wears the number 5 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "defender",
+    "player": "Xavi Espart",
+    "number": 12,
+    "text": "Xavi Espart is a defender for FC Barcelona and wears the number 12 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "defender",
+    "player": "Andreas Christensen",
+    "number": 15,
+    "text": "Andreas Christensen is a defender for FC Barcelona and wears the number 15 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "defender",
+    "player": "Gerard Martín",
+    "number": 18,
+    "text": "Gerard Martín is a defender for FC Barcelona and wears the number 18 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "defender",
+    "player": "Jules Koundé",
+    "number": 23,
+    "text": "Jules Koundé is a defender for FC Barcelona and wears the number 23 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "defender",
+    "player": "Eric García",
+    "number": 24,
+    "text": "Eric García is a defender for FC Barcelona and wears the number 24 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "midfielder",
+    "player": "Brian Fariñas",
+    "number": 4,
+    "text": "Brian Fariñas is a midfielder for FC Barcelona and wears the number 4 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "midfielder",
+    "player": "Gavi",
+    "number": 6,
+    "text": "Gavi is a midfielder for FC Barcelona and wears the number 6 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "midfielder",
+    "player": "Fermín López",
+    "number": 7,
+    "text": "Fermín López is a midfielder for FC Barcelona and wears the number 7 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "midfielder",
+    "player": "Pedri",
+    "number": 8,
+    "text": "Pedri is a midfielder for FC Barcelona and wears the number 8 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "midfielder",
+    "player": "Rodri",
+    "number": 16,
+    "text": "Rodri is a midfielder for FC Barcelona and wears the number 16 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "midfielder",
+    "player": "Dani Olmo",
+    "number": 20,
+    "text": "Dani Olmo is a midfielder for FC Barcelona and wears the number 20 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "midfielder",
+    "player": "Frenkie de Jong",
+    "number": 21,
+    "text": "Frenkie de Jong is a midfielder for FC Barcelona and wears the number 21 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "midfielder",
+    "player": "Marc Bernal",
+    "number": 22,
+    "text": "Marc Bernal is a midfielder for FC Barcelona and wears the number 22 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "forward",
+    "player": "Gabriel Jesus",
+    "number": 9,
+    "text": "Gabriel Jesus is a forward for FC Barcelona and wears the number 9 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "forward",
+    "player": "Lamine Yamal",
+    "number": 10,
+    "text": "Lamine Yamal is a forward for FC Barcelona and wears the number 10 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "forward",
+    "player": "Raphinha",
+    "number": 11,
+    "text": "Raphinha is a forward for FC Barcelona and wears the number 11 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "forward",
+    "player": "Karim Adeyemi",
+    "number": 14,
+    "text": "Karim Adeyemi is a forward for FC Barcelona and wears the number 14 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "forward",
+    "player": "Anthony Gordon",
+    "number": 17,
+    "text": "Anthony Gordon is a forward for FC Barcelona and wears the number 17 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "forward",
+    "player": "Roony Bardghji",
+    "number": 19,
+    "text": "Roony Bardghji is a forward for FC Barcelona and wears the number 19 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "forward",
+    "player": "Jesse Bisiwu",
+    "number": 27,
+    "text": "Jesse Bisiwu is a forward for FC Barcelona and wears the number 27 shirt."
+  },
+
+  {
+    "team": "FC Barcelona",
+    "type": "forward",
+    "player": "Hamza Abdelkarim",
+    "number": 29,
+    "text": "Hamza Abdelkarim is a forward for FC Barcelona and wears the number 29 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "team",
+    "text": "Real Madrid is a professional football club based in Madrid, Spain, competing in La Liga."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "president",
+    "person": "Florentino Pérez",
+    "text": "Florentino Pérez is the president of Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "coach",
+    "person": "José Mourinho",
+    "text": "José Mourinho is the head coach of Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "assistant_coach",
+    "person": "João Tralhão",
+    "text": "João Tralhão is the assistant coach of Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "technical_assistant",
+    "person": "Pedro Machado",
+    "text": "Pedro Machado is a technical assistant for Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "technical_assistant",
+    "person": "Sami Khedira",
+    "text": "Sami Khedira is a technical assistant for Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "goalkeeping_coach",
+    "person": "Nuno Santos",
+    "text": "Nuno Santos is the goalkeeper coach of Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "fitness_coach",
+    "person": "Antonio Dias",
+    "text": "Antonio Dias is a fitness coach for Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "performance_manager",
+    "person": "Antonio Pintus",
+    "text": "Antonio Pintus is the performance manager of Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "sports_sciences",
+    "person": "Sandro Carriço",
+    "text": "Sandro Carriço works in Sports Sciences for Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "head_analyst",
+    "person": "Roberto Merella",
+    "text": "Roberto Merella is the head analyst of Real Madrid."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "goalkeeper",
+    "player": "Thibaut Courtois",
+    "number": 1,
+    "text": "Thibaut Courtois is a goalkeeper for Real Madrid and wears the number 1 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "goalkeeper",
+    "player": "Andriy Lunin",
+    "number": 13,
+    "text": "Andriy Lunin is a goalkeeper for Real Madrid and wears the number 13 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Raúl Asencio",
+    "number": 2,
+    "text": "Raúl Asencio is a defender for Real Madrid and wears the number 2 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Éder Militão",
+    "number": 3,
+    "text": "Éder Militão is a defender for Real Madrid and wears the number 3 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Dean Huijsen",
+    "number": 4,
+    "text": "Dean Huijsen is a defender for Real Madrid and wears the number 4 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Trent Alexander-Arnold",
+    "number": 12,
+    "text": "Trent Alexander-Arnold is a defender for Real Madrid and wears the number 12 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Ibrahima Konaté",
+    "number": 16,
+    "text": "Ibrahima Konaté is a defender for Real Madrid and wears the number 16 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Marc Cucurella",
+    "number": 17,
+    "text": "Marc Cucurella is a defender for Real Madrid and wears the number 17 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Álvaro Carreras",
+    "number": 18,
+    "text": "Álvaro Carreras is a defender for Real Madrid and wears the number 18 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Antonio Rüdiger",
+    "number": 22,
+    "text": "Antonio Rüdiger is a defender for Real Madrid and wears the number 22 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Ferland Mendy",
+    "number": 23,
+    "text": "Ferland Mendy is a defender for Real Madrid and wears the number 23 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "defender",
+    "player": "Denzel Dumfries",
+    "number": 24,
+    "text": "Denzel Dumfries is a defender for Real Madrid and wears the number 24 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "midfielder",
+    "player": "Jude Bellingham",
+    "number": 5,
+    "text": "Jude Bellingham is a midfielder for Real Madrid and wears the number 5 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "midfielder",
+    "player": "Eduardo Camavinga",
+    "number": 6,
+    "text": "Eduardo Camavinga is a midfielder for Real Madrid and wears the number 6 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "midfielder",
+    "player": "Federico Valverde",
+    "number": 8,
+    "text": "Federico Valverde is a midfielder for Real Madrid and wears the number 8 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "midfielder",
+    "player": "Aurélien Tchouaméni",
+    "number": 14,
+    "text": "Aurélien Tchouaméni is a midfielder for Real Madrid and wears the number 14 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "midfielder",
+    "player": "Arda Güler",
+    "number": 15,
+    "text": "Arda Güler is a midfielder for Real Madrid and wears the number 15 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "midfielder",
+    "player": "Bernardo Silva",
+    "number": 20,
+    "text": "Bernardo Silva is a midfielder for Real Madrid and wears the number 20 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "midfielder",
+    "player": "Thiago",
+    "number": 27,
+    "text": "Thiago is a midfielder for Real Madrid and wears the number 27 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "forward",
+    "player": "Vinícius Júnior",
+    "number": 7,
+    "text": "Vinícius Júnior is a forward for Real Madrid and wears the number 7 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "forward",
+    "player": "Endrick",
+    "number": 9,
+    "text": "Endrick is a forward for Real Madrid and wears the number 9 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "forward",
+    "player": "Kylian Mbappé",
+    "number": 10,
+    "text": "Kylian Mbappé is a forward for Real Madrid and wears the number 10 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "forward",
+    "player": "Rodrygo",
+    "number": 11,
+    "text": "Rodrygo is a forward for Real Madrid and wears the number 11 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "forward",
+    "player": "Carlos Espí",
+    "number": 19,
+    "text": "Carlos Espí is a forward for Real Madrid and wears the number 19 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "forward",
+    "player": "Brahim Díaz",
+    "number": 21,
+    "text": "Brahim Díaz is a forward for Real Madrid and wears the number 21 shirt."
+  },
+
+  {
+    "team": "Real Madrid",
+    "type": "forward",
+    "player": "Yan Diomande",
+    "number": 25,
+    "text": "Yan Diomande is a forward for Real Madrid and wears the number 25 shirt."
+  },
+
+  {
+  "team": "Atlético de Madrid",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Atlético de Madrid is a Spanish football club based in Madrid and competes in LaLiga."
+},
+{
+  "team": "Athletic Club",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Athletic Club is a Spanish football club based in Bilbao and competes in LaLiga."
+},
+{
+  "team": "Real Betis",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Real Betis is a Spanish football club based in Seville and competes in LaLiga."
+},
+{
+  "team": "Sevilla FC",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Sevilla FC is a Spanish football club based in Seville and competes in LaLiga."
+},
+{
+  "team": "Deportivo Alavés",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Deportivo Alavés is a Spanish football club based in Vitoria-Gasteiz and competes in LaLiga."
+},
+{
+  "team": "RC Deportivo",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "RC Deportivo is a Spanish football club based in A Coruña and competes in LaLiga."
+},
+{
+  "team": "Real Sociedad",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Real Sociedad is a Spanish football club based in San Sebastián and competes in LaLiga."
+},
+{
+  "team": "Villarreal CF",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Villarreal CF is a Spanish football club based in Villarreal and competes in LaLiga."
+},
+{
+  "team": "Getafe CF",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Getafe CF is a Spanish football club based in Getafe and competes in LaLiga."
+},
+{
+  "team": "Rayo Vallecano",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Rayo Vallecano is a Spanish football club based in Madrid and competes in LaLiga."
+},
+{
+  "team": "CA Osasuna",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "CA Osasuna is a Spanish football club based in Pamplona and competes in LaLiga."
+},
+{
+  "team": "Celta",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Celta is a Spanish football club based in Vigo and competes in LaLiga."
+},
+{
+  "team": "RCD Espanyol de Barcelona",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "RCD Espanyol de Barcelona is a Spanish football club based in Barcelona and competes in LaLiga."
+},
+{
+  "team": "R. Racing Club",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Racing Club is a Spanish football club based in Santander and competes in LaLiga."
+},
+{
+  "team": "Levante UD",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Levante UD is a Spanish football club based in Valencia and competes in LaLiga."
+},
+{
+  "team": "Elche CF",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Elche CF is a Spanish football club based in Elche and competes in LaLiga."
+},
+{
+  "team": "Valencia CF",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Valencia CF is a Spanish football club based in Valencia and competes in LaLiga."
+},
+{
+  "team": "Málaga CF",
+  "league": "LaLiga",
+  "type": "team",
+  "text": "Málaga CF is a Spanish football club based in Málaga and competes in LaLiga."
+}
+
 
 ]

@@ -1,6 +1,6 @@
 import json
 
-with open ("data/football_data.json") as f :
+with open("data/football_data.json", encoding="utf-8") as f:
     data = json.load(f) 
 
 print(data[0])
