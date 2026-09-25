@@ -54,12 +54,14 @@ Context:
 
 Question: {query}"""
 
-    response = client.models.generate_content(
+    try:
+        response = client.models.generate_content(
             model="gemini-3.6-flash",
             contents=prompt
-    )
-    print("DEBUG - full response:", response)
-    return response.text
+        )
+        return response.text
+    except Exception as e:
+        return "Sorry, I'm having trouble reaching the football brain right now — please try again in a moment."
 
 if __name__ == "__main__":
     chat_history = []
