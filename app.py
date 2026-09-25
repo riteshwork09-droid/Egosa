@@ -47,7 +47,7 @@ if user_input:
     with st.chat_message("user", avatar="🧑"):
         st.write(user_input)
 
-    answer = ask_egosa(user_input)
+    answer =     answer = ask_egosa(user_input, st.session_state.messages)
 
     st.session_state.messages.append({"role": "assistant", "content": answer})
     with st.chat_message("assistant", avatar="⚽"):
