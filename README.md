@@ -1,8 +1,27 @@
 # ⚽ Egosa — Football RAG Chatbot
 
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-deployed-red)
+![Gemini](https://img.shields.io/badge/LLM-Gemini-orange)
+![FAISS](https://img.shields.io/badge/Vector%20Search-FAISS-green)
+
 Egosa is a domain-restricted chatbot that answers questions about **La Liga, Premier League, and Champions League** football only. It's built using **RAG (Retrieval-Augmented Generation)** — instead of relying on an LLM's built-in knowledge, it retrieves facts from a custom knowledge base before generating an answer.
 
 **Live demo:** [https://egosa-chatbot.streamlit.app/](https://egosa-chatbot.streamlit.app/)
+
+## Contents
+- [Preview](#preview)
+- [Why this project](#why-this-project)
+- [How it works](#how-it-works)
+- [Tech stack](#tech-stack)
+- [Project structure](#project-structure)
+- [Running it locally](#running-it-locally)
+- [Design decisions](#design-decisions)
+- [Known limitations](#known-limitations--next-steps)
+
+## Preview
+
+![Egosa screenshot](docs/screenshot.png)
 
 ## Why this project
 
@@ -10,18 +29,15 @@ Egosa stays strictly within its football domain, but rather than being limited t
 
 ## How it works
 
-```
-User question
-      ↓
-Topic guardrail (keyword check across current message + conversation history)
-      ↓
-Query → embedded into a vector (sentence-transformers)
-      ↓
-FAISS searches the knowledge base for the most relevant facts
-      ↓
-Retrieved facts + conversation history + question → sent to Gemini as context
-      ↓
-LLM answers using retrieved facts first, general football knowledge as fallback
+```mermaid
+flowchart TD
+    A[User question] --> B{On-topic?}
+    B -->|No| C[Refuse: football-only]
+    B -->|Yes| D[Embed query]
+    D --> E[FAISS: search knowledge base]
+    E --> F[Retrieve top-k facts]
+    F --> G[Send facts + history + question to Gemini]
+    G --> H[Answer: verified facts first, general knowledge as fallback]
 ```
 
 ## Tech stack
@@ -39,8 +55,10 @@ LLM answers using retrieved facts first, general football knowledge as fallback
 ```
 egosa/
 ├── data/
-│   ├── football_data.json   # knowledge base
+│   ├── football_data.json   # knowledge base (144 entries)
 │   └── football.index       # saved FAISS index (generated)
+├── docs/
+│   └── screenshot.png       # app preview
 ├── ingest.py                 # builds embeddings + FAISS index
 ├── retriever.py                # retrieves top-k relevant facts for a query
 ├── chatbot.py                    # guardrail + retrieval + conversation memory + LLM call
@@ -77,15 +95,16 @@ streamlit run app.py
 
 - **Topic guardrail runs before retrieval** — off-topic questions are rejected immediately, without spending an API call or search.
 - **Guardrail checks conversation history, not just the current message** — so follow-up questions like "why not X instead" are correctly understood as still on-topic, based on earlier messages in the same session.
-- **The LLM prefers retrieved context but can fall back to general knowledge** — this is a deliberate trade-off between strict grounding (safer, but limited to dataset coverage) and broader usefulness (better coverage, slightly less strictly verified).
+- **The LLM prefers retrieved context but can fall back to general knowledge** — a deliberate trade-off between strict grounding (safer, but limited to dataset coverage) and broader usefulness (better coverage, slightly less strictly verified).
 - **FAISS `IndexFlatL2`** was chosen for exact search at this dataset's small scale; a larger dataset would move to an approximate index (`IndexIVFFlat` / `HNSW`) for speed.
+- **API calls are wrapped in error handling** — temporary LLM provider outages or rate limits return a friendly fallback message instead of crashing the app.
 
 ## Known limitations / next steps
 
-- Keyword-based guardrail is still an approximation — very indirect follow-ups deep into a conversation may occasionally be misclassified.
-- Free-tier Gemini API has a daily request quota (20 requests/day on the model used here) — heavy testing can hit this limit; a production version would need a paid tier or rate-limit handling with graceful fallback messaging.
-- Knowledge base currently has a small number of entries — coverage is limited outside trophies/records/player facts covered directly; general questions fall back to the LLM's own knowledge.
-- Planned: expand dataset, add live data via a football API, explore tool-use/agentic features (e.g. generating study-plan-style PDFs) as a separate follow-up project.
+- Keyword-based guardrail is an approximation — very indirect follow-ups, or names/topics not on the keyword list, may occasionally be misclassified.
+- Free-tier Gemini API has a daily request quota — heavy usage can hit this limit; a production version would need a paid tier or smarter rate-limit handling.
+- Dataset currently has 144 entries — broad coverage of major clubs/players/trophies, but not exhaustive; general questions fall back to the LLM's own knowledge.
+- Planned: expand dataset further, add live data via a football API, replace keyword-guardrail with a similarity-score-based check, explore tool-use/agentic features (e.g. generating study-plan-style PDFs) as a separate follow-up project.
 
 ## Author
 
