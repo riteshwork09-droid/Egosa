@@ -93,7 +93,7 @@ streamlit run app.py
 
 ## Design decisions
 
-- **Topic guardrail runs before retrieval** — off-topic questions are rejected immediately, without spending an API call or search.
+-- **Topic guardrail uses similarity-score thresholding, not keywords** — the query is embedded and compared against the knowledge base; if the closest match is too dissimilar (distance ≥ 1.0), the question is treated as off-topic. This generalizes to any football topic in-scope without needing a hardcoded keyword list.
 - **Guardrail checks conversation history, not just the current message** — so follow-up questions like "why not X instead" are correctly understood as still on-topic, based on earlier messages in the same session.
 - **The LLM prefers retrieved context but can fall back to general knowledge** — a deliberate trade-off between strict grounding (safer, but limited to dataset coverage) and broader usefulness (better coverage, slightly less strictly verified).
 - **FAISS `IndexFlatL2`** was chosen for exact search at this dataset's small scale; a larger dataset would move to an approximate index (`IndexIVFFlat` / `HNSW`) for speed.
@@ -101,7 +101,6 @@ streamlit run app.py
 
 ## Known limitations / next steps
 
-- Keyword-based guardrail is an approximation — very indirect follow-ups, or names/topics not on the keyword list, may occasionally be misclassified.
 - Free-tier Gemini API has a daily request quota — heavy usage can hit this limit; a production version would need a paid tier or smarter rate-limit handling.
 - Dataset currently has 144 entries — broad coverage of major clubs/players/trophies, but not exhaustive; general questions fall back to the LLM's own knowledge.
 - Planned: expand dataset further, add live data via a football API, replace keyword-guardrail with a similarity-score-based check, explore tool-use/agentic features (e.g. generating study-plan-style PDFs) as a separate follow-up project.
