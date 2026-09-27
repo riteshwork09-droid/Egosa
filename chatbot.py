@@ -25,15 +25,25 @@ def is_on_topic(query, history):
     recent_text = " ".join(m["content"].lower() for m in history[-10:])
     return any(keyword in recent_text for keyword in ALLOWED_KEYWORDS)
 
+from retriever import retrieve_with_scores
+
+SIMILARITY_THRESHOLD = 1.0  # tune this after testing — lower = stricter
+
+from retriever import retrieve_with_scores
+
+SIMILARITY_THRESHOLD = 1.0
+
 def ask_egosa(query, history=None):
     if history is None:
         history = []
 
-    if not is_on_topic(query, history):
+    context, best_distance = retrieve_with_scores(query)
+
+    if best_distance >= SIMILARITY_THRESHOLD:
         return "I'm Egosa — I only answer questions about La Liga, Premier League, and Champions League football."
 
-    context = retrieve(query)
     context_text = "\n".join(context)
+    # ...rest of your existing function (history_text, prompt, try/except) stays exactly the same
 
     history_text = ""
     for m in history[-6:]:

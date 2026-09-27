@@ -14,6 +14,13 @@ def retrieve(query, k=3):
     results = [data[i]["text"] for i in indices[0]]
     return results
 
+def retrieve_with_scores(query, k=3):
+    query_embedding = model.encode([query])
+    distances, indices = index.search(query_embedding, k)
+    results = [data[i]["text"] for i in indices[0]]
+    best_distance = float(distances[0][0])
+    return results, best_distance
+
 if __name__ == "__main__":
     question = "who won the most champions league titles"
     results = retrieve(question)
