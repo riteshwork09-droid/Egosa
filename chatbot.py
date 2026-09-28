@@ -8,7 +8,7 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 ALLOWED_KEYWORDS = [
     "la liga", "laliga", "premier league", "epl",
-    "champions league", "ucl", "football", "soccer",
+    "champions league", "ucl", "football", "soccer","football",
     "messi", "ronaldo", "haaland", "mbappe", "mbappé",
     "bellingham", "vinicius", "vinícius", "yamal",
     "lewandowski", "salah", "benzema", "ballon d'or",
@@ -37,13 +37,14 @@ def ask_egosa(query, history=None):
     if history is None:
         history = []
 
-    context, best_distance = retrieve_with_scores(query)
+    # Combine the current question with recent conversation for a richer topic check
+    recent_context = " ".join(m["content"] for m in history[-4:])
+    combined_query = f"{recent_context} {query}".strip()
+
+    context_text, best_distance = retrieve_with_scores(combined_query)
 
     if best_distance >= SIMILARITY_THRESHOLD:
         return "I'm Egosa — I only answer questions about La Liga, Premier League, and Champions League football."
-
-    context_text = "\n".join(context)
-    # ...rest of your existing function (history_text, prompt, try/except) stays exactly the same
 
     history_text = ""
     for m in history[-6:]:
