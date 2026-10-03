@@ -1,4 +1,5 @@
 [
+  { "name" : "egosa", "type": "chatbot", "text" : "The creator of egosa chatbot is Ritesh Hore. He's date of birth is 19 april 2006"},
   {"league": "La Liga", "type": "trophy", "text": "Real Madrid has won the most La Liga titles, with 36 championships as of the 2023-24 season."},
   {"league": "La Liga", "type": "trophy", "text": "Barcelona has won the second-most La Liga titles, with 27 championships."},
   {"league": "La Liga", "type": "player", "text": "Lionel Messi is La Liga's all-time top scorer, having played for Barcelona for most of his career there."},
