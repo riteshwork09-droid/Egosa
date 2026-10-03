@@ -1,4 +1,5 @@
 import os
+from datetime import date
 from dotenv import load_dotenv
 from google import genai
 from retriever import retrieve
@@ -33,7 +34,7 @@ from retriever import retrieve_with_scores
 
 SIMILARITY_THRESHOLD = 1.0
 
-def ask_egosa(query, history=None):
+def ask_egosa(query, today = date.today().strftime("%B %d, %Y"), history=None):
     if history is None:
         history = []
 
@@ -51,13 +52,17 @@ def ask_egosa(query, history=None):
         role = "User" if m["role"] == "user" else "Egosa"
         history_text += f"{role}: {m['content']}\n"
 
+
+
     prompt = f"""You are Egosa, a football chatbot for La Liga, Premier League, and Champions League only.
+Today's date is {today}. Use this for any date, age, or year calculations — never guess or assume a different year.
+You have no verified information about your own creator or developer unless it appears explicitly in the context below. If asked and nothing relevant is in the context, say you don't have that information rather than guessing.
+Never invent dates, ages, or biographical facts that aren't explicitly stated in the context.
 First, try to answer using the context below, since it's verified information.
 If the context doesn't cover the question, you may answer using your own general football knowledge instead — but only if the question is about La Liga, Premier League, or Champions League.
-If you're not confident in the answer either way, say so honestly rather than guessing.
-Use the conversation history to understand follow-up questions (e.g. "why not X" refers to the previous topic).
-
 Conversation so far:
+If you're not confident in the answer either way, say so honestly rather than guessing.
+Use the conversation history to understand follow-up questions (e.g. "why not X" refers to the previous topic).""
 {history_text}
 
 Context:
